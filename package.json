@@ -1,5 +1,5 @@
 {
-	"homepage" : "https://melanie-ronoh.github.io/budget-app",
+	"homepage": "https://melanie-ronoh.github.io/budget-app",
 	"name": "budget-tracker",
 	"version": "0.1.0",
 	"private": true,
@@ -15,6 +15,8 @@
 		"uuid": "^8.3.1"
 	},
 	"scripts": {
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
 		"start": "PORT=3001 react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
